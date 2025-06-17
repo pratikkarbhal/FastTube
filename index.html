@@ -1,14 +1,81 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YouTube Downloader</title>
   <style>
-    /* (same CSS as your original post) */
-    /* Truncated here for brevity */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #141414, #000);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #e50914;
+      text-shadow: 0 0 10px #e50914aa;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      max-width: 500px;
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: white;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      outline: none;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 15px #e50914;
+    }
+
+    button {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 0 15px #e50914aa;
+    }
+
+    button:hover {
+      background-color: #f6121d;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 2rem;
+      }
+      button {
+        width: 100%;
+      }
+    }
   </style>
+
   <script>
     function extractID() {
       const url = document.getElementById("yt-url").value.trim();
@@ -16,12 +83,12 @@
       if (match) {
         return match[1];
       } else {
-        alert("Invalid YouTube URL!");
+        alert("❌ Invalid YouTube URL!");
         return null;
       }
     }
 
-    function redirectToServer(server) {
+    function redirectToServer() {
       const videoID = extractID();
       if (videoID) {
         const downloadURL = `https://inv-ca1-c.nadeko.net/latest_version?id=${videoID}&itag=18`;
@@ -31,10 +98,8 @@
   </script>
 </head>
 <body>
-  <h2>YouTube Video Downloader</h2>
-  <input type="text" id="yt-url" placeholder="Enter YouTube URL">
-  <br><br>
-  <button onclick="redirectToServer(1)">Download</button>
-
+  <h2>🎬 YouTube Downloader</h2>
+  <input type="text" id="yt-url" placeholder="Paste your YouTube video URL here..." />
+  <button onclick="redirectToServer()">Download</button>
 </body>
 </html>
