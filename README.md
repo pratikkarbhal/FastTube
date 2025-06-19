@@ -1,15 +1,11 @@
 # 🎥 FastTube – Free YouTube Downloader via Invidious API
 
-![License](https://img.shields.io/github/license/pratikkarbhal/fasttube?style=flat-square)
-![Stars](https://img.shields.io/github/stars/pratikkarbhal/fasttube?style=flat-square)
-![Issues](https://img.shields.io/github/issues/pratikkarbhal/fasttube?style=flat-square)
-![Forks](https://img.shields.io/github/forks/pratikkarbhal/fasttube?style=flat-square)
 
 > 🚀 **FastTube** is a lightweight, ad-free YouTube downloader built using the [Invidious API](https://github.com/iv-org/invidious). Paste a YouTube URL and instantly download videos with one click — no trackers, no popups, no nonsense.
 
 ---
 
-## 🔗 Live Demo
+# 🔗 Live Demo
 
 🌐 [**Click here to try FastTube**](https://pratikkarbhal.github.io/YT_gateway/)  
 
