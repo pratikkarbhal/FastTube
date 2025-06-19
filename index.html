@@ -88,14 +88,30 @@
       }
     }
 
-    function redirectToServer() {
-      const videoID = extractID();
-      if (videoID) {
-        const downloadURL = `https://inv-ca1-c.nadeko.net/latest_version?id=${videoID}&itag=22`;
-        window.location.href = downloadURL;
+async function redirectToServer() {
+    const videoID = extractID();
+    if (!videoID) return;
+
+    const itag22URL = `https://inv-ca1-c.nadeko.net/latest_version?id=${videoID}&itag=22`;
+    const fallbackItag18URL = `https://inv-ca1-c.nadeko.net/latest_version?id=${videoID}&itag=18`;
+
+    try {
+      const response = await fetch(itag22URL);
+      const text = await response.text();
+
+      if (text.toLowerCase().includes('No itag found.')) {
+        // itag=22 not available, fallback to itag=18
+        window.location.href = fallbackItag18URL;
+      } else {
+        // itag=22 is valid
+        window.location.href = itag22URL;
       }
+    } catch (error) {
+      // Network or fetch error, use fallback
+      window.location.href = fallbackItag18URL;
     }
-  </script>
+  }
+</script>
 </head>
 <body>
   <h2>🎬 YouTube Downloader</h2>
