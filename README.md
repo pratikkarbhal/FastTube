@@ -17,7 +17,7 @@
 
 ## 📸 Preview
 
-![FastTube Screenshot](https://github.com/user-attachments/assets/3db96dab-d005-43ee-a3d1-5cd65c049b7d)
+<a href="https://pratikkarbhal.github.io/FastTube/" target="_blank"> ![FastTube Screenshot](https://github.com/user-attachments/assets/3db96dab-d005-43ee-a3d1-5cd65c049b7d)  </a>
 
 
 ---
