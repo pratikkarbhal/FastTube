@@ -5,9 +5,13 @@
 
 ---
 
-# 🔗 Live Demo
+## 🔗 Live Demo
 
-🌐 [**Click here to try FastTube**](https://pratikkarbhal.github.io/YT_gateway/)  
+<p align="center">
+  <a href="https://pratikkarbhal.github.io/FastTube/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Try%20FastTube%20Now-Click%20Here-blue?style=for-the-badge&logo=github" alt="Live Demo">
+  </a>
+</p>
 
 ---
 
