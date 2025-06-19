@@ -17,7 +17,8 @@
 
 ## 📸 Preview
 
-![FastTube Screenshot](https://user-images.githubusercontent.com/00000000/preview.png)
+![FastTube Screenshot](https://github.com/user-attachments/assets/3db96dab-d005-43ee-a3d1-5cd65c049b7d)
+
 
 ---
 
